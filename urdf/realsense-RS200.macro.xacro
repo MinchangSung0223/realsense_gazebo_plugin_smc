@@ -55,15 +55,15 @@
     <joint name="${prefix}color_joint" type="fixed">
         <parent link="${prefix}rs200_camera" />
         <child link="${prefix}color" />
-        <!-- <origin xyz="0 -0.046 0.004" rpy="0 0 0"/> -->
+        <!-- <origin xyz="0 -0.00 0.000" rpy="0 0 0"/> -->
         <!-- The default position is change since in Rviz the cloud depth axis is Z not X-->
-        <origin xyz="0 -0.046 0.004" rpy="${pi/2} ${pi} ${pi/2}"/>
+        <origin xyz="0 -0.00 0.000" rpy="${pi/2} ${pi} ${pi/2}"/>
     </joint>
 
     <joint name="${prefix}depth_joint" type="fixed">
         <parent link="${prefix}rs200_camera" />
         <child link="${prefix}depth" />
-        <origin xyz="0 -0.03 0.004" rpy="0 0 0"/>
+        <origin xyz="0 -0.00 0.000" rpy="0 0 0"/>
     </joint>
 
     <joint name="${prefix}ired1_joint" type="fixed">
@@ -106,7 +106,7 @@
         <min_depth>0</min_depth>-->
 
         <sensor name="${prefix}color" type="camera">
-            <pose frame="">0 -0.046 0.004 0 0 0</pose>
+            <pose frame="">0 -0.00 0.000 0 0 0</pose>
             <camera name="${prefix}rs200_camera">
             <horizontal_fov>1.047</horizontal_fov>
             <image>
@@ -175,7 +175,7 @@
             <visualize>0</visualize>
         </sensor>
         <sensor name="${prefix}depth" type="depth">
-            <pose frame="">0 -0.03 0.004 0 0 0</pose>
+            <pose frame="">0 -0.00 0.000 0 0 0</pose>
             <camera name="${prefix}rs200_camera">
             <horizontal_fov>1.047</horizontal_fov>
             <image>
